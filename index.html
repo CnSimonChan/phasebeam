@@ -1,15 +1,27 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Phase Beam</title>
-        <link href="phasebeam.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <div id="phasebeam">
-            <canvas></canvas>
-            <canvas></canvas>
-        </div>
-        <script src="phasebeam.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Phase Beam</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="background"></canvas>
+    <canvas id="foreground"></canvas>
+    <script src="phasebeam.js"></script>
+</body>
 </html>
