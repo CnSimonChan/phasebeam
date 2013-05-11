@@ -179,6 +179,8 @@ var degree = config.angle / 180 * Math.PI,
     cosaAbs = Math.abs(cosa),
     foregroundContext = foreground.getContext("2d");
 
+var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame;
+
 function drawFrame() {
     foregroundContext.clearRect(0, 0, innerWidth, innerHeight);
 
