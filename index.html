@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -8,21 +8,21 @@
             height: 100%;
             width: 100%;
             margin: 0;
+            overflow: hidden;
         }
 
         canvas {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
         }
     </style>
 </head>
 <body>
-    <canvas id="background"></canvas>
+    <canvas id="background">
+        Your browser doesn't support canvas.
+    </canvas>
     <canvas id="foreground"></canvas>
     <script src="phasebeam.js"></script>
+    <!--
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,7 +31,7 @@
 
         ga('create', 'UA-40855806-1', 'github.io');
         ga('send', 'pageview');
-
     </script>
+    -->
 </body>
 </html>
