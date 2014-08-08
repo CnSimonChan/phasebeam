@@ -4,7 +4,7 @@
     var requestAnimationFrame =
         window.requestAnimationFrame ||
         window.mozRequestAnimationFrame ||
-        window.webkieRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
         window.msRequestAnimationFrame;
     if (!requestAnimationFrame) {
         alert("Your browser doesn't support requestAnimationFrame().");
