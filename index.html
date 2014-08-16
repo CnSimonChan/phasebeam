@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -11,12 +11,7 @@
             width: 100%;
             margin: 0;
             overflow: hidden;
-        }
-
-        .container {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
+            -ms-overflow-style: none;
         }
 
         canvas {
@@ -25,12 +20,10 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <canvas id="background">
-            Your browser doesn't support canvas.
-        </canvas>
-        <canvas id="foreground"></canvas>
-    </div>
+    <canvas id="background">
+        Your browser doesn't support canvas.
+    </canvas>
+    <canvas id="foreground"></canvas>
     <script src="phasebeam.js"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
